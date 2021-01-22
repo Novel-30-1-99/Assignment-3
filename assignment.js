@@ -1,12 +1,20 @@
+// Problem-1: kilometerToMeter
+
 function kilometerToMeter(x){
-    kilometers = 1000;
-    meter = kilometers * x;
-    console.log(meter);
-    return x;
-}
+    if(x>0){
+        meter = 1000 * x;
+        console.log(meter);
+        return x;
+    }
+    else if(x<0){
+        console.log("Kilometer can not be a negative value");
+    }
+}    
 kilometerToMeter(3);
 
 
+
+// Problem-2: budgetCalculator
 
 function budgetCalculator(watch,mobile,laptop){
     
@@ -26,7 +34,7 @@ budgetCalculator(4,3,3);
 
 
 
-
+// problem-3: hotelCost 
 
 function hotelCost(day){
 
@@ -49,15 +57,15 @@ function hotelCost(day){
 
     console.log(rent);
     return rent;
-    }
-    hotelCost(50);
+}
+hotelCost(50);
 
 
 
-
+// problem-4: megaFreind
 
 function megaFreind() {
-    var friendsName = ['novel',  'sammoo', 'aditto','ziko', 'prio'];
+    var friendsName = ['novel', 'sammoo', 'aditto', 'ziko', 'prio'];
     var max = 0;
     var index = 0;
     for (i = 0; i < friendsName.length; i++) {
@@ -69,5 +77,4 @@ function megaFreind() {
     console.log(friendsName[index]);
    return friendsName[index];
 }
-
 megaFreind();
